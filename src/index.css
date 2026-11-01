@@ -4,6 +4,7 @@
   --sky-purple: #6B4E9B;
   --sunset-orange: #FF6B35;
   --forest-green: #2D5F3F;
+  --teal: #40B8A8;
   --cream: #F5E6D3;
   --danger-red: #E63946;
   --deep-night: #1A1A2E;
@@ -17,7 +18,7 @@
 
 body {
   font-family: 'Inter', sans-serif;
-  background: #1A1A2E;
+  background: linear-gradient(135deg, #1A4D3E 0%, #0E3B4A 50%, #2D5F3F 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -41,7 +42,7 @@ body {
   position: relative;
   overflow: hidden;
   border-radius: 12px;
-  box-shadow: 0 0 60px rgba(107, 78, 155, 0.3);
+  box-shadow: 0 0 60px rgba(64, 184, 168, 0.4), 0 0 100px rgba(45, 95, 63, 0.3);
 }
 
 @media (min-width: 768px) {
@@ -66,7 +67,7 @@ body {
   position: absolute;
   inset: 0;
   pointer-events: none;
-  background: radial-gradient(ellipse at center, transparent 50%, rgba(26, 26, 46, 0.7) 100%);
+  background: radial-gradient(ellipse at center, transparent 50%, rgba(26, 77, 62, 0.7) 100%);
   z-index: 50;
 }
 

@@ -34,8 +34,8 @@ const SVGFilters = () => (
 /* ─── Mountain Layers ─── */
 const MountainLayers = ({ variant = 'sunset' }: { variant?: string }) => {
   const c = variant === 'sunset'
-    ? ['#3D2A5C', '#4E3870', '#6B4E9B', '#8B6EAB']
-    : ['#1E4430', '#2D5F3F', '#3A7050', '#4A8060'];
+    ? ['#1A4D3E', '#2D5F3F', '#3A7050', '#4A8060']
+    : ['#1A4D3E', '#2D5F3F', '#3A7050', '#4A8060'];
   return (
     <g className="mountain-layers">
       <path d="M-20,420 Q60,330 140,370 Q220,300 300,350 Q380,280 460,330 Q540,300 620,360 L620,960 L-20,960Z" fill={c[0]} filter="url(#blur-far)" opacity="0.6" />
@@ -101,10 +101,10 @@ const Scene1 = () => (
     <svg viewBox="0 0 540 960" className="w-full h-full" preserveAspectRatio="xMidYMid slice">
       <defs>
         <linearGradient id="sky1" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stopColor="#6B4E9B" />
-          <stop offset="35%" stopColor="#9B5E8B" />
-          <stop offset="65%" stopColor="#FF6B35" />
-          <stop offset="100%" stopColor="#FFB347" />
+          <stop offset="0%" stopColor="#FF6B35" />
+          <stop offset="35%" stopColor="#FFB347" />
+          <stop offset="65%" stopColor="#40B8A8" />
+          <stop offset="100%" stopColor="#2D5F3F" />
         </linearGradient>
         <radialGradient id="sun1" cx="50%" cy="68%" r="35%">
           <stop offset="0%" stopColor="#FFB347" stopOpacity="0.9" />
@@ -182,8 +182,9 @@ const Scene2 = () => (
     <svg viewBox="0 0 540 960" className="w-full h-full" preserveAspectRatio="xMidYMid slice">
       <defs>
         <linearGradient id="sky2" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stopColor="#6B4E9B" />
-          <stop offset="100%" stopColor="#1A1A2E" />
+          <stop offset="0%" stopColor="#40B8A8" />
+          <stop offset="50%" stopColor="#2D5F3F" />
+          <stop offset="100%" stopColor="#1A4D3E" />
         </linearGradient>
         <linearGradient id="jeans-g" x1="0" y1="0" x2="0" y2="1">
           <stop offset="0%" stopColor="#6B9BD2" />
@@ -266,8 +267,9 @@ const Scene3 = () => (
     <svg viewBox="0 0 540 960" className="w-full h-full" preserveAspectRatio="xMidYMid slice">
       <defs>
         <linearGradient id="sky3" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stopColor="#5C3D7A" />
-          <stop offset="100%" stopColor="#1A1A2E" />
+          <stop offset="0%" stopColor="#FF6B35" />
+          <stop offset="50%" stopColor="#40B8A8" />
+          <stop offset="100%" stopColor="#2D5F3F" />
         </linearGradient>
         <linearGradient id="boot-new" x1="0" y1="0" x2="0" y2="1">
           <stop offset="0%" stopColor="#B8652A" />
@@ -360,8 +362,9 @@ const Scene4 = () => (
     <svg viewBox="0 0 540 960" className="w-full h-full" preserveAspectRatio="xMidYMid slice">
       <defs>
         <linearGradient id="sky4" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stopColor="#4A3570" />
-          <stop offset="100%" stopColor="#1A1A2E" />
+          <stop offset="0%" stopColor="#2D5F3F" />
+          <stop offset="50%" stopColor="#40B8A8" />
+          <stop offset="100%" stopColor="#0E3B4A" />
         </linearGradient>
         <linearGradient id="towel-g" x1="0" y1="0" x2="0" y2="1">
           <stop offset="0%" stopColor="#FFF5EB" />
@@ -454,9 +457,9 @@ const Scene5 = () => (
       <defs>
         <linearGradient id="sky5" x1="0" y1="0" x2="0" y2="1">
           <stop offset="0%" stopColor="#FFB347" />
-          <stop offset="25%" stopColor="#FF6B35" />
-          <stop offset="55%" stopColor="#9B5E8B" />
-          <stop offset="100%" stopColor="#6B4E9B" />
+          <stop offset="30%" stopColor="#FF6B35" />
+          <stop offset="60%" stopColor="#40B8A8" />
+          <stop offset="100%" stopColor="#2D5F3F" />
         </linearGradient>
         <radialGradient id="sun5" cx="50%" cy="38%" r="45%">
           <stop offset="0%" stopColor="#FFB347" stopOpacity="0.7" />
