@@ -380,7 +380,7 @@ const Scene4 = () => (
       <Particles />
 
       {/* Big Towel */}
-      <g id="towel-group" transform="translate(220, 440)">
+      <g id="towel-group" transform="translate(270, 440)">
         <g id="towel-main">
           <rect x="-85" y="-65" width="170" height="130" rx="10" fill="url(#towel-g)" />
           {/* Fluffy texture */}
@@ -492,12 +492,12 @@ const Scene5 = () => (
 
       {/* Logo */}
       <g id="logo-group" transform="translate(270, 240)">
-        <circle id="logo-glow-circle" cx="0" cy="0" r="90" fill="url(#logo-glow-g)" opacity="0" />
-        <circle id="logo-circle" cx="0" cy="0" r="62" fill="none" stroke="#FF6B35" strokeWidth="3" opacity="0" />
-        <circle cx="0" cy="0" r="58" fill="rgba(26,26,46,0.5)" opacity="0" id="logo-bg" />
-        <text id="logo-text1" x="0" y="-8" textAnchor="middle" fontFamily="ADVENTURES, sans-serif" fontSize="24" fontWeight="400" fill="#F5E6D3" opacity="0">Анапа:</text>
-        <text id="logo-text2" x="0" y="16" textAnchor="middle" fontFamily="ADVENTURES, sans-serif" fontSize="14" fontWeight="400" fill="#FF6B35" opacity="0">тропы</text>
-        <text id="logo-text3" x="0" y="34" textAnchor="middle" fontFamily="ADVENTURES, sans-serif" fontSize="14" fontWeight="400" fill="#FF6B35" opacity="0">и вершины</text>
+        <circle id="logo-glow-circle" cx="0" cy="0" r="130" fill="url(#logo-glow-g)" opacity="0" />
+        <circle id="logo-circle" cx="0" cy="0" r="95" fill="none" stroke="#FF6B35" strokeWidth="4" opacity="0" />
+        <circle cx="0" cy="0" r="90" fill="rgba(26,26,46,0.5)" opacity="0" id="logo-bg" />
+        <text id="logo-text1" x="0" y="-12" textAnchor="middle" fontFamily="ADVENTURES, sans-serif" fontSize="34" fontWeight="400" fill="#F5E6D3" opacity="0">Анапа:</text>
+        <text id="logo-text2" x="0" y="20" textAnchor="middle" fontFamily="ADVENTURES, sans-serif" fontSize="20" fontWeight="400" fill="#FF6B35" opacity="0">тропы</text>
+        <text id="logo-text3" x="0" y="46" textAnchor="middle" fontFamily="ADVENTURES, sans-serif" fontSize="20" fontWeight="400" fill="#FF6B35" opacity="0">и вершины</text>
       </g>
 
       {/* CTA */}
