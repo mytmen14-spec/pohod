@@ -531,7 +531,7 @@ function App() {
     played.current = true;
 
     const ctx = gsap.context(() => {
-      const tl = gsap.timeline({ delay: 0.3 });
+      const tl = gsap.timeline({ delay: 0.5 }).timeScale(0.7);
 
       /* ── Particle ambient animation (runs throughout) ── */
       gsap.to('.particle-dot', {
@@ -551,72 +551,72 @@ function App() {
         repeat: 3,
       });
 
-      /* ═══ SCENE 1 — HOOK (0:00 – 0:03) ═══ */
+      /* ═══ SCENE 1 — HOOK ═══ */
       tl.set('#scene1', { opacity: 1, scale: 1 })
-        .from('#backpack', { scale: 0.3, opacity: 0, duration: 0.8, ease: 'elastic.out(1, 0.6)' })
-        .from('#scene1-text text', { y: 40, opacity: 0, duration: 0.5, stagger: 0.12, ease: 'back.out(1.7)' }, '-=0.5')
-        .to('#fly-jeans', { opacity: 1, x: -40, y: -60, rotation: -20, duration: 0.5, ease: 'power3.out' }, '-=0.3')
-        .to('#fly-boot', { opacity: 1, x: 40, y: -50, rotation: 15, duration: 0.5, ease: 'power3.out' }, '-=0.35')
-        .to('#fly-towel', { opacity: 1, x: 15, y: -70, rotation: -8, duration: 0.5, ease: 'power3.out' }, '-=0.35');
+        .from('#backpack', { scale: 0.3, opacity: 0, duration: 1.1, ease: 'elastic.out(1, 0.6)' })
+        .from('#scene1-text text', { y: 40, opacity: 0, duration: 0.7, stagger: 0.18, ease: 'back.out(1.7)' }, '-=0.6')
+        .to('#fly-jeans', { opacity: 1, x: -40, y: -60, rotation: -20, duration: 0.7, ease: 'power3.out' }, '-=0.4')
+        .to('#fly-boot', { opacity: 1, x: 40, y: -50, rotation: 15, duration: 0.7, ease: 'power3.out' }, '-=0.45')
+        .to('#fly-towel', { opacity: 1, x: 15, y: -70, rotation: -8, duration: 0.7, ease: 'power3.out' }, '-=0.45');
 
-      /* ═══ TRANSITION → SCENE 2 (0:03) ═══ */
-      tl.to('#scene1', { opacity: 0, scale: 0.95, duration: 0.4, ease: 'power3.in' })
+      /* ═══ TRANSITION → SCENE 2 ═══ */
+      tl.to('#scene1', { opacity: 0, scale: 0.95, duration: 0.6, ease: 'power3.in' })
         .set('#scene2', { opacity: 1, scale: 0.95 })
-        .to('#scene2', { scale: 1, duration: 0.4, ease: 'power3.out' });
+        .to('#scene2', { scale: 1, duration: 0.6, ease: 'power3.out' });
 
-      /* ═══ SCENE 2 — JEANS (0:03 – 0:10) ═══ */
-      tl.from('#scene2-text text', { x: -40, opacity: 0, duration: 0.4, stagger: 0.08, ease: 'power3.out' })
-        .from('#jeans-main', { y: 60, opacity: 0, duration: 0.6, ease: 'back.out(1.7)' }, '-=0.2')
-        .to('#wet-overlay', { opacity: 0.8, duration: 1.8, ease: 'power2.in' })
-        .to('.water-drop', { opacity: 0.9, y: 50, duration: 0.6, stagger: 0.08, ease: 'power2.in' }, '-=1.2')
-        .from('#thermometer', { y: -40, opacity: 0, duration: 0.5, ease: 'power3.out' }, '-=0.8')
-        .to('#thermo-level', { attr: { height: 35, y: 5 }, duration: 1.2, ease: 'power2.in' }, '-=0.6')
-        .to('#cross1', { opacity: 1, duration: 0.25, ease: 'back.out(2.5)' });
+      /* ═══ SCENE 2 — JEANS ═══ */
+      tl.from('#scene2-text text', { x: -40, opacity: 0, duration: 0.6, stagger: 0.12, ease: 'power3.out' })
+        .from('#jeans-main', { y: 60, opacity: 0, duration: 0.8, ease: 'back.out(1.7)' }, '-=0.3')
+        .to('#wet-overlay', { opacity: 0.8, duration: 2.2, ease: 'power2.in' })
+        .to('.water-drop', { opacity: 0.9, y: 50, duration: 0.8, stagger: 0.1, ease: 'power2.in' }, '-=1.5')
+        .from('#thermometer', { y: -40, opacity: 0, duration: 0.7, ease: 'power3.out' }, '-=1')
+        .to('#thermo-level', { attr: { height: 35, y: 5 }, duration: 1.5, ease: 'power2.in' }, '-=0.8')
+        .to('#cross1', { opacity: 1, duration: 0.35, ease: 'back.out(2.5)' });
 
-      /* ═══ TRANSITION → SCENE 3 (0:10) ═══ */
-      tl.to('#scene2', { opacity: 0, scale: 0.95, duration: 0.4, ease: 'power3.in' })
+      /* ═══ TRANSITION → SCENE 3 ═══ */
+      tl.to('#scene2', { opacity: 0, scale: 0.95, duration: 0.6, ease: 'power3.in' })
         .set('#scene3', { opacity: 1, scale: 0.95 })
-        .to('#scene3', { scale: 1, duration: 0.4, ease: 'power3.out' });
+        .to('#scene3', { scale: 1, duration: 0.6, ease: 'power3.out' });
 
-      /* ═══ SCENE 3 — BOOTS (0:10 – 0:17) ═══ */
-      tl.from('#scene3-text text', { y: -25, opacity: 0, duration: 0.4, stagger: 0.08, ease: 'power3.out' })
-        .from('#new-boot', { x: -60, opacity: 0, duration: 0.6, ease: 'back.out(1.7)' }, '-=0.2')
-        .to('#pain-zone', { opacity: 0.9, scale: 1.4, duration: 0.4, ease: 'power2.out', yoyo: true, repeat: 3 })
-        .to('#cross2', { opacity: 1, duration: 0.25, ease: 'back.out(2.5)' })
-        .to('#old-boot', { opacity: 1, duration: 0.5, ease: 'power3.out' })
-        .from('#check1', { scale: 0, transformOrigin: 'center', duration: 0.4, ease: 'elastic.out(1, 0.5)' }, '-=0.2');
+      /* ═══ SCENE 3 — BOOTS ═══ */
+      tl.from('#scene3-text text', { y: -25, opacity: 0, duration: 0.6, stagger: 0.12, ease: 'power3.out' })
+        .from('#new-boot', { x: -60, opacity: 0, duration: 0.8, ease: 'back.out(1.7)' }, '-=0.3')
+        .to('#pain-zone', { opacity: 0.9, scale: 1.4, duration: 0.55, ease: 'power2.out', yoyo: true, repeat: 3 })
+        .to('#cross2', { opacity: 1, duration: 0.35, ease: 'back.out(2.5)' })
+        .to('#old-boot', { opacity: 1, duration: 0.7, ease: 'power3.out' })
+        .from('#check1', { scale: 0, transformOrigin: 'center', duration: 0.5, ease: 'elastic.out(1, 0.5)' }, '-=0.3');
 
-      /* ═══ TRANSITION → SCENE 4 (0:17) ═══ */
-      tl.to('#scene3', { opacity: 0, scale: 0.95, duration: 0.4, ease: 'power3.in' })
+      /* ═══ TRANSITION → SCENE 4 ═══ */
+      tl.to('#scene3', { opacity: 0, scale: 0.95, duration: 0.6, ease: 'power3.in' })
         .set('#scene4', { opacity: 1, scale: 0.95 })
-        .to('#scene4', { scale: 1, duration: 0.4, ease: 'power3.out' });
+        .to('#scene4', { scale: 1, duration: 0.6, ease: 'power3.out' });
 
-      /* ═══ SCENE 4 — TOWEL (0:17 – 0:24) ═══ */
-      tl.from('#scene4-text text', { y: -25, opacity: 0, duration: 0.4, stagger: 0.08, ease: 'power3.out' })
-        .from('#towel-main', { y: -100, opacity: 0, duration: 0.7, ease: 'bounce.out' }, '-=0.2')
-        .to('#weight-arrow', { opacity: 1, duration: 0.3 })
-        .to('#weight-label', { opacity: 1, duration: 0.3 }, '-=0.15')
-        .to('#scale', { opacity: 1, duration: 0.4 })
-        .to('#scale-tilt', { rotation: 18, transformOrigin: '0 -45', duration: 0.5, ease: 'power2.in' })
-        .to('#cross3', { opacity: 1, duration: 0.25, ease: 'back.out(2.5)' })
-        .to('#microfiber', { opacity: 1, duration: 0.5, ease: 'power3.out' })
-        .from('#check2', { scale: 0, transformOrigin: 'center', duration: 0.4, ease: 'elastic.out(1, 0.5)' }, '-=0.2');
+      /* ═══ SCENE 4 — TOWEL ═══ */
+      tl.from('#scene4-text text', { y: -25, opacity: 0, duration: 0.6, stagger: 0.12, ease: 'power3.out' })
+        .from('#towel-main', { y: -100, opacity: 0, duration: 0.9, ease: 'bounce.out' }, '-=0.3')
+        .to('#weight-arrow', { opacity: 1, duration: 0.4 })
+        .to('#weight-label', { opacity: 1, duration: 0.4 }, '-=0.2')
+        .to('#scale', { opacity: 1, duration: 0.5 })
+        .to('#scale-tilt', { rotation: 18, transformOrigin: '0 -45', duration: 0.7, ease: 'power2.in' })
+        .to('#cross3', { opacity: 1, duration: 0.35, ease: 'back.out(2.5)' })
+        .to('#microfiber', { opacity: 1, duration: 0.7, ease: 'power3.out' })
+        .from('#check2', { scale: 0, transformOrigin: 'center', duration: 0.5, ease: 'elastic.out(1, 0.5)' }, '-=0.3');
 
-      /* ═══ TRANSITION → SCENE 5 (0:24) ═══ */
-      tl.to('#scene4', { opacity: 0, scale: 0.95, duration: 0.4, ease: 'power3.in' })
+      /* ═══ TRANSITION → SCENE 5 ═══ */
+      tl.to('#scene4', { opacity: 0, scale: 0.95, duration: 0.6, ease: 'power3.in' })
         .set('#scene5', { opacity: 1, scale: 0.95 })
-        .to('#scene5', { scale: 1, duration: 0.4, ease: 'power3.out' });
+        .to('#scene5', { scale: 1, duration: 0.6, ease: 'power3.out' });
 
-      /* ═══ SCENE 5 — CTA (0:24 – 0:30) ═══ */
-      tl.from('#hiker-figure', { y: 30, opacity: 0, duration: 0.7, ease: 'power3.out' })
-        .to('#logo-bg', { opacity: 1, duration: 0.3 }, '-=0.3')
-        .to('#logo-glow-circle', { opacity: 1, duration: 0.4 })
-        .to('#logo-circle', { opacity: 1, duration: 0.4, ease: 'elastic.out(1, 0.7)' }, '-=0.2')
-        .to('#logo-text1', { opacity: 1, duration: 0.25 })
-        .to('#logo-text2', { opacity: 1, duration: 0.25 }, '-=0.1')
-        .to('#logo-text3', { opacity: 1, duration: 0.25 }, '-=0.1')
-        .from('#cta-text text', { y: 25, opacity: 0, duration: 0.4, stagger: 0.12, ease: 'back.out(1.7)' })
-        .to('#bouncing-arrow', { y: 12, duration: 0.45, ease: 'power2.inOut', yoyo: true, repeat: 5 });
+      /* ═══ SCENE 5 — CTA ═══ */
+      tl.from('#hiker-figure', { y: 30, opacity: 0, duration: 0.9, ease: 'power3.out' })
+        .to('#logo-bg', { opacity: 1, duration: 0.4 }, '-=0.4')
+        .to('#logo-glow-circle', { opacity: 1, duration: 0.6 })
+        .to('#logo-circle', { opacity: 1, duration: 0.6, ease: 'elastic.out(1, 0.7)' }, '-=0.3')
+        .to('#logo-text1', { opacity: 1, duration: 0.35 })
+        .to('#logo-text2', { opacity: 1, duration: 0.35 }, '-=0.15')
+        .to('#logo-text3', { opacity: 1, duration: 0.35 }, '-=0.15')
+        .from('#cta-text text', { y: 25, opacity: 0, duration: 0.6, stagger: 0.18, ease: 'back.out(1.7)' })
+        .to('#bouncing-arrow', { y: 12, duration: 0.55, ease: 'power2.inOut', yoyo: true, repeat: 5 });
 
     }, containerRef);
 
