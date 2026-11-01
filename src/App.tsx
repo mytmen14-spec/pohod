@@ -158,10 +158,10 @@ const Scene1 = () => (
 
       {/* Text */}
       <g id="scene1-text">
-        <text x="270" y="155" textAnchor="middle" fontFamily="Unbounded, sans-serif" fontSize="44" fontWeight="900" fill="#F5E6D3" className="text-glow-white">
+        <text x="270" y="155" textAnchor="middle" fontFamily="Rye, sans-serif" fontSize="44" fontWeight="900" fill="#F5E6D3" className="text-glow-white">
           НЕ БЕРИ ЭТО
         </text>
-        <text x="270" y="215" textAnchor="middle" fontFamily="Unbounded, sans-serif" fontSize="56" fontWeight="900" fill="#FF6B35" className="text-glow">
+        <text x="270" y="215" textAnchor="middle" fontFamily="Rye, sans-serif" fontSize="56" fontWeight="900" fill="#FF6B35" className="text-glow">
           В ПОХОД 🚫
         </text>
         <text x="270" y="268" textAnchor="middle" fontFamily="Inter, sans-serif" fontSize="22" fill="#F5E6D3" opacity="0.85">
@@ -245,7 +245,7 @@ const Scene2 = () => (
 
       {/* Text */}
       <g id="scene2-text">
-        <text x="270" y="115" textAnchor="middle" fontFamily="Unbounded, sans-serif" fontSize="34" fontWeight="700" fill="#F5E6D3" className="text-glow-white">
+        <text x="270" y="115" textAnchor="middle" fontFamily="Rye, sans-serif" fontSize="34" fontWeight="700" fill="#F5E6D3" className="text-glow-white">
           1. ДЖИНСЫ И ХЛОПОК
         </text>
         <text x="270" y="160" textAnchor="middle" fontFamily="Inter, sans-serif" fontSize="19" fill="#F5E6D3" opacity="0.8">
@@ -339,7 +339,7 @@ const Scene3 = () => (
 
       {/* Text */}
       <g id="scene3-text">
-        <text x="270" y="115" textAnchor="middle" fontFamily="Unbounded, sans-serif" fontSize="38" fontWeight="700" fill="#F5E6D3" className="text-glow-white">
+        <text x="270" y="115" textAnchor="middle" fontFamily="Rye, sans-serif" fontSize="38" fontWeight="700" fill="#F5E6D3" className="text-glow-white">
           2. НОВАЯ ОБУВЬ
         </text>
         <text x="270" y="160" textAnchor="middle" fontFamily="Inter, sans-serif" fontSize="19" fill="#F5E6D3" opacity="0.8">
@@ -432,7 +432,7 @@ const Scene4 = () => (
 
       {/* Text */}
       <g id="scene4-text">
-        <text x="270" y="115" textAnchor="middle" fontFamily="Unbounded, sans-serif" fontSize="28" fontWeight="700" fill="#F5E6D3" className="text-glow-white">
+        <text x="270" y="115" textAnchor="middle" fontFamily="Rye, sans-serif" fontSize="28" fontWeight="700" fill="#F5E6D3" className="text-glow-white">
           3. МАХРОВОЕ ПОЛОТЕНЦЕ
         </text>
         <text x="270" y="160" textAnchor="middle" fontFamily="Inter, sans-serif" fontSize="19" fill="#F5E6D3" opacity="0.8">
@@ -492,17 +492,17 @@ const Scene5 = () => (
         <circle id="logo-glow-circle" cx="0" cy="0" r="90" fill="url(#logo-glow-g)" opacity="0" />
         <circle id="logo-circle" cx="0" cy="0" r="62" fill="none" stroke="#FF6B35" strokeWidth="3" opacity="0" />
         <circle cx="0" cy="0" r="58" fill="rgba(26,26,46,0.5)" opacity="0" id="logo-bg" />
-        <text id="logo-text1" x="0" y="-12" textAnchor="middle" fontFamily="Unbounded, sans-serif" fontSize="22" fontWeight="700" fill="#F5E6D3" opacity="0">TRAVEL</text>
-        <text id="logo-text2" x="0" y="16" textAnchor="middle" fontFamily="Unbounded, sans-serif" fontSize="20" fontWeight="400" fill="#FF6B35" opacity="0">WILD</text>
+        <text id="logo-text1" x="0" y="-12" textAnchor="middle" fontFamily="Rye, sans-serif" fontSize="22" fontWeight="700" fill="#F5E6D3" opacity="0">TRAVEL</text>
+        <text id="logo-text2" x="0" y="16" textAnchor="middle" fontFamily="Rye, sans-serif" fontSize="20" fontWeight="400" fill="#FF6B35" opacity="0">WILD</text>
         <text id="logo-text3" x="0" y="42" textAnchor="middle" fontFamily="Inter, sans-serif" fontSize="12" fill="#F5E6D3" opacity="0">⛰️ ADVENTURES</text>
       </g>
 
       {/* CTA */}
       <g id="cta-text">
-        <text x="270" y="710" textAnchor="middle" fontFamily="Unbounded, sans-serif" fontSize="30" fontWeight="700" fill="#F5E6D3" className="text-glow-white">
+        <text x="270" y="710" textAnchor="middle" fontFamily="Rye, sans-serif" fontSize="30" fontWeight="700" fill="#F5E6D3" className="text-glow-white">
           Забирай ЧЕК-ЛИСТ
         </text>
-        <text x="270" y="750" textAnchor="middle" fontFamily="Unbounded, sans-serif" fontSize="30" fontWeight="700" fill="#F5E6D3" className="text-glow-white">
+        <text x="270" y="750" textAnchor="middle" fontFamily="Rye, sans-serif" fontSize="30" fontWeight="700" fill="#F5E6D3" className="text-glow-white">
           туриста 📋
         </text>
         <text x="270" y="810" textAnchor="middle" fontFamily="Inter, sans-serif" fontSize="22" fontWeight="600" fill="#FF6B35">
