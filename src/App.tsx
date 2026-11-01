@@ -158,14 +158,14 @@ const Scene1 = () => (
 
       {/* Text */}
       <g id="scene1-text">
-        <text x="270" y="155" textAnchor="middle" fontFamily="Unbounded, sans-serif" fontSize="34" fontWeight="900" fill="#F5E6D3" className="text-glow-white">
+        <text x="270" y="155" textAnchor="middle" fontFamily="Unbounded, sans-serif" fontSize="44" fontWeight="900" fill="#F5E6D3" className="text-glow-white">
           НЕ БЕРИ ЭТО
         </text>
-        <text x="270" y="205" textAnchor="middle" fontFamily="Unbounded, sans-serif" fontSize="44" fontWeight="900" fill="#FF6B35" className="text-glow">
+        <text x="270" y="215" textAnchor="middle" fontFamily="Unbounded, sans-serif" fontSize="56" fontWeight="900" fill="#FF6B35" className="text-glow">
           В ПОХОД 🚫
         </text>
-        <text x="270" y="250" textAnchor="middle" fontFamily="Inter, sans-serif" fontSize="18" fill="#F5E6D3" opacity="0.85">
-          3 ошибки новичка
+        <text x="270" y="268" textAnchor="middle" fontFamily="Inter, sans-serif" fontSize="22" fill="#F5E6D3" opacity="0.85">
+          3 ошибки походника
         </text>
       </g>
     </svg>
@@ -245,10 +245,10 @@ const Scene2 = () => (
 
       {/* Text */}
       <g id="scene2-text">
-        <text x="270" y="115" textAnchor="middle" fontFamily="Unbounded, sans-serif" fontSize="26" fontWeight="700" fill="#F5E6D3" className="text-glow-white">
+        <text x="270" y="115" textAnchor="middle" fontFamily="Unbounded, sans-serif" fontSize="34" fontWeight="700" fill="#F5E6D3" className="text-glow-white">
           1. ДЖИНСЫ И ХЛОПОК
         </text>
-        <text x="270" y="155" textAnchor="middle" fontFamily="Inter, sans-serif" fontSize="15" fill="#F5E6D3" opacity="0.8">
+        <text x="270" y="160" textAnchor="middle" fontFamily="Inter, sans-serif" fontSize="19" fill="#F5E6D3" opacity="0.8">
           Мокнут → Не сохнут → Переохлаждение
         </text>
       </g>
@@ -334,15 +334,15 @@ const Scene3 = () => (
           <circle cx="52" cy="-52" r="20" fill="#2D5F3F" />
           <path d="M42,-52 L49,-45 L62,-60" fill="none" stroke="white" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round" />
         </g>
-        <text x="0" y="70" textAnchor="middle" fontFamily="Inter, sans-serif" fontSize="12" fill="#F5E6D3" opacity="0.7">Разношенная ✓</text>
+        <text x="0" y="70" textAnchor="middle" fontFamily="Inter, sans-serif" fontSize="15" fill="#F5E6D3" opacity="0.7">Разношенная ✓</text>
       </g>
 
       {/* Text */}
       <g id="scene3-text">
-        <text x="270" y="115" textAnchor="middle" fontFamily="Unbounded, sans-serif" fontSize="28" fontWeight="700" fill="#F5E6D3" className="text-glow-white">
+        <text x="270" y="115" textAnchor="middle" fontFamily="Unbounded, sans-serif" fontSize="38" fontWeight="700" fill="#F5E6D3" className="text-glow-white">
           2. НОВАЯ ОБУВЬ
         </text>
-        <text x="270" y="155" textAnchor="middle" fontFamily="Inter, sans-serif" fontSize="15" fill="#F5E6D3" opacity="0.8">
+        <text x="270" y="160" textAnchor="middle" fontFamily="Inter, sans-serif" fontSize="19" fill="#F5E6D3" opacity="0.8">
           Первый выход = кровавые мозоли
         </text>
       </g>
@@ -416,7 +416,7 @@ const Scene4 = () => (
           <circle cx="44" cy="-22" r="18" fill="#2D5F3F" />
           <path d="M35,-22 L41,-16 L53,-28" fill="none" stroke="white" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
         </g>
-        <text x="0" y="50" textAnchor="middle" fontFamily="Inter, sans-serif" fontSize="12" fill="#F5E6D3" opacity="0.7">Микрофибра ✓</text>
+        <text x="0" y="50" textAnchor="middle" fontFamily="Inter, sans-serif" fontSize="15" fill="#F5E6D3" opacity="0.7">Микрофибра ✓</text>
       </g>
 
       {/* Scale */}
@@ -432,10 +432,10 @@ const Scene4 = () => (
 
       {/* Text */}
       <g id="scene4-text">
-        <text x="270" y="115" textAnchor="middle" fontFamily="Unbounded, sans-serif" fontSize="22" fontWeight="700" fill="#F5E6D3" className="text-glow-white">
+        <text x="270" y="115" textAnchor="middle" fontFamily="Unbounded, sans-serif" fontSize="28" fontWeight="700" fill="#F5E6D3" className="text-glow-white">
           3. МАХРОВОЕ ПОЛОТЕНЦЕ
         </text>
-        <text x="270" y="155" textAnchor="middle" fontFamily="Inter, sans-serif" fontSize="15" fill="#F5E6D3" opacity="0.8">
+        <text x="270" y="160" textAnchor="middle" fontFamily="Inter, sans-serif" fontSize="19" fill="#F5E6D3" opacity="0.8">
           Вес кирпича. Сохнет сутками.
         </text>
       </g>
@@ -492,25 +492,25 @@ const Scene5 = () => (
         <circle id="logo-glow-circle" cx="0" cy="0" r="90" fill="url(#logo-glow-g)" opacity="0" />
         <circle id="logo-circle" cx="0" cy="0" r="62" fill="none" stroke="#FF6B35" strokeWidth="3" opacity="0" />
         <circle cx="0" cy="0" r="58" fill="rgba(26,26,46,0.5)" opacity="0" id="logo-bg" />
-        <text id="logo-text1" x="0" y="-12" textAnchor="middle" fontFamily="Unbounded, sans-serif" fontSize="18" fontWeight="700" fill="#F5E6D3" opacity="0">TRAVEL</text>
-        <text id="logo-text2" x="0" y="14" textAnchor="middle" fontFamily="Unbounded, sans-serif" fontSize="16" fontWeight="400" fill="#FF6B35" opacity="0">WILD</text>
-        <text id="logo-text3" x="0" y="38" textAnchor="middle" fontFamily="Inter, sans-serif" fontSize="10" fill="#F5E6D3" opacity="0">⛰️ ADVENTURES</text>
+        <text id="logo-text1" x="0" y="-12" textAnchor="middle" fontFamily="Unbounded, sans-serif" fontSize="22" fontWeight="700" fill="#F5E6D3" opacity="0">TRAVEL</text>
+        <text id="logo-text2" x="0" y="16" textAnchor="middle" fontFamily="Unbounded, sans-serif" fontSize="20" fontWeight="400" fill="#FF6B35" opacity="0">WILD</text>
+        <text id="logo-text3" x="0" y="42" textAnchor="middle" fontFamily="Inter, sans-serif" fontSize="12" fill="#F5E6D3" opacity="0">⛰️ ADVENTURES</text>
       </g>
 
       {/* CTA */}
       <g id="cta-text">
-        <text x="270" y="710" textAnchor="middle" fontFamily="Unbounded, sans-serif" fontSize="22" fontWeight="700" fill="#F5E6D3" className="text-glow-white">
+        <text x="270" y="710" textAnchor="middle" fontFamily="Unbounded, sans-serif" fontSize="30" fontWeight="700" fill="#F5E6D3" className="text-glow-white">
           Забирай ЧЕК-ЛИСТ
         </text>
-        <text x="270" y="745" textAnchor="middle" fontFamily="Unbounded, sans-serif" fontSize="22" fontWeight="700" fill="#F5E6D3" className="text-glow-white">
+        <text x="270" y="750" textAnchor="middle" fontFamily="Unbounded, sans-serif" fontSize="30" fontWeight="700" fill="#F5E6D3" className="text-glow-white">
           туриста 📋
         </text>
-        <text x="270" y="800" textAnchor="middle" fontFamily="Inter, sans-serif" fontSize="18" fontWeight="600" fill="#FF6B35">
+        <text x="270" y="810" textAnchor="middle" fontFamily="Inter, sans-serif" fontSize="22" fontWeight="600" fill="#FF6B35">
           Пиши &apos;ПОХОД&apos; в комментарии 👇
         </text>
-        <g id="bouncing-arrow" transform="translate(270, 855)">
-          <polygon points="-18,0 18,0 0,22" fill="#FF6B35" />
-          <polygon points="-14,28 14,28 0,46" fill="#FF6B35" opacity="0.5" />
+        <g id="bouncing-arrow" transform="translate(270, 865)">
+          <polygon points="-20,0 20,0 0,24" fill="#FF6B35" />
+          <polygon points="-16,30 16,30 0,50" fill="#FF6B35" opacity="0.5" />
         </g>
       </g>
     </svg>
