@@ -495,9 +495,9 @@ const Scene5 = () => (
         <circle id="logo-glow-circle" cx="0" cy="0" r="90" fill="url(#logo-glow-g)" opacity="0" />
         <circle id="logo-circle" cx="0" cy="0" r="62" fill="none" stroke="#FF6B35" strokeWidth="3" opacity="0" />
         <circle cx="0" cy="0" r="58" fill="rgba(26,26,46,0.5)" opacity="0" id="logo-bg" />
-        <text id="logo-text1" x="0" y="-5" textAnchor="middle" fontFamily="ADVENTURES, sans-serif" fontSize="24" fontWeight="400" fill="#F5E6D3" opacity="0">Anapa</text>
-        <text id="logo-text2" x="0" y="25" textAnchor="middle" fontFamily="ADVENTURES, sans-serif" fontSize="18" fontWeight="400" fill="#FF6B35" opacity="0">Adventures</text>
-        <text id="logo-text3" x="0" y="42" textAnchor="middle" fontFamily="Inter, sans-serif" fontSize="12" fill="#F5E6D3" opacity="0">⛰️</text>
+        <text id="logo-text1" x="0" y="-8" textAnchor="middle" fontFamily="ADVENTURES, sans-serif" fontSize="24" fontWeight="400" fill="#F5E6D3" opacity="0">Анапа:</text>
+        <text id="logo-text2" x="0" y="16" textAnchor="middle" fontFamily="ADVENTURES, sans-serif" fontSize="14" fontWeight="400" fill="#FF6B35" opacity="0">тропы</text>
+        <text id="logo-text3" x="0" y="34" textAnchor="middle" fontFamily="ADVENTURES, sans-serif" fontSize="14" fontWeight="400" fill="#FF6B35" opacity="0">и вершины</text>
       </g>
 
       {/* CTA */}
